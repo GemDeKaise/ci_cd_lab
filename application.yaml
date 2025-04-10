@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/GemDeKaise/ci_cd_lab
+    repoURL: https://github.com/gemdekaise/ci_cd_lab
     targetRevision: HEAD
     path: manifests
   destination:

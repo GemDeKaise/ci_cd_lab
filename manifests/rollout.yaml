@@ -8,7 +8,7 @@ spec:
   replicas: 10
   strategy:
     canary:
-      steps:
+      steps:s
         - setWeight: 50
         - pause: { duration: 60s }
         - setWeight: 100
@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: webserver
-          image: ghcr.io/<todo-add-your-github-username>/ci_cd_lab:latest
+          image: ghcr.io/github/ci_cd_lab:latest
           ports:
             - containerPort: 8080
           imagePullPolicy: Always

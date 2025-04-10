@@ -6,9 +6,13 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/GemDeKaise
+    repoURL: https://github.com/GemDeKaise/ci_cd_lab
     targetRevision: HEAD
     path: manifests
   destination:
     server: https://kubernetes.default.svc
     namespace: default
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true

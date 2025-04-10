@@ -8,7 +8,7 @@ spec:
   replicas: 10
   strategy:
     canary:
-      ssteps:
+      steps:
         - setWeight: 25
         - pause: { duration: 120s }
         - setWeight: 75
@@ -25,7 +25,7 @@ spec:
     spec:
       containers:
         - name: webserver
-          image: ghcr.io/gemdekaise/ci_cd_lab:latest
+          image: ghcr.io/gemdekaise/ci_cd_lab:doesnotexist  # ← AICI modifici
           ports:
             - containerPort: 8080
           imagePullPolicy: Always
